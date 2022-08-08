@@ -60,16 +60,20 @@ function sideBarElements() {
         </div>
       </li>
     </Link>
-    <li className="m-4 mb-0 text-neutral-focus bg-base-300 text-xl">
-      <div>
-          <a href="/#portfolio" className='border-b-2 border-primary'> Portfolio </a>
-      </div>
-    </li>
-    <li className="text-neutral-focus bg-base-300 m-4 mb-0 text-xl">
-      <div>
-        <span className='border-b-2 border-primary'> Serviços </span>
-      </div>
-    </li>
+    <Link href="/#portfolio">
+      <li className="m-4 mb-0 text-neutral-focus bg-base-300 text-xl">
+        <div>
+            <span className='border-b-2 border-primary'> Portfolio </span>
+        </div>
+      </li>
+    </Link>
+    <Link href="/#services">
+      <li className="text-neutral-focus bg-base-300 m-4 mb-0 text-xl">
+        <div>
+          <span className='border-b-2 border-primary'> Serviços </span>
+        </div>
+      </li>
+    </Link>
     <ul className="menu pl-6 menu-compact bg-base-300 p-2 rounded-box">
       <li>
         <Link href="/servicos/fotografia">
