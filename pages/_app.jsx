@@ -42,9 +42,11 @@ function upBarElements() {
         </div>
       </div>
       <button className="mt-4 active:bg-primary hover:bg-neutral-focus active:rounded-md transition-all active:text-neutral-content border-b-2 p-2 text-secondary-focus  flex items-left text-md btn-ghost text-md rounded-md">
-        <a href="/#portfolio" className='font-bitter text-neutral-content border-b-2 border-base-content'>
+      <Link href="/#portfolio">
+        <a className='font-bitter text-neutral-content border-b-2 border-base-content'>
           Portfolio
         </a>
+      </Link>
       </button>
     </>
   )
