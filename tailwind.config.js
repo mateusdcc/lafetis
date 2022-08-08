@@ -13,7 +13,7 @@ module.exports = {
         'alumni': ['Alumni Sans Inline One', 'cursive'],
         'bebas': ['Bebas Neue', 'cursive'],
         'oleo': ['Oleo Script Swash Caps', 'sans-serif'],
-        'bitter': ['Bitter', 'serif'],
+        'bahianita': ['Bahianita', 'sans-serif'],
       },
     },
   },

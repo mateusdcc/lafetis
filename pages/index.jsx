@@ -7,7 +7,7 @@ function Home() {
       <div className="hero min-h-screen bg-gradient-to-b from-neutral to-base-100">
         <div className="hero-content text-center">
           <div className="max-w-md -translate-y-10">
-            <h1 className="font-bebas text-5xl font-bold ">Criação completa de artes digitais.</h1>
+            <h1 className="font-bebas text-5xl font-bold text-white ">Criação completa de artes digitais.</h1>
             <a href="#services">
               <button className="btn mt-5">Saiba mais</button>
             </a>

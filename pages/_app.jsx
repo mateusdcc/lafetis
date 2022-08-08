@@ -1,13 +1,14 @@
 import '../styles/globals.css'
 import Link from "next/link";
 import Head from "next/head";
+import NextNProgress from "nextjs-progressbar";
 
 function upBarElements() {
   return (
     <>
       <Link href="/comissao">
         <button className="mt-4 active:bg-primary hover:bg-neutral-focus active:rounded-md transition-all active:text-neutral-content border-b-2 p-2 text-secondary-focus  flex items-left text-md btn-ghost text-md rounded-md">
-            <span className='font-bitter border-b-2 border-base-content text-neutral-content'>
+            <span className='font-bahianita text-xl border-b-2 border-base-content text-neutral-content'>
               Orçamento
             </span>
         </button>
@@ -17,24 +18,24 @@ function upBarElements() {
         <div className="flex">
           <div className="dropdown dropdown-end">
             <button className="mt-4 active:bg-primary hover:bg-neutral-focus active:rounded-md transition-all active:text-neutral-content border-b-2 p-2 text-secondary-focus  flex items-left text-md btn-ghost text-md rounded-md">
-              <span className='font-bitter border-b-2 text-neutral-content border-base-content'>
+              <span className='font-bahianita text-xl border-b-2 text-neutral-content border-base-content'>
                 Serviços
               </span>
             </button>
             <ul tabIndex="0" className="flex flex-col items-center menu dropdown-content text-secondary-focus w-max shadow bg-base-300/[0.1] rounded-box w-52 mt-4">
               <li>
                 <Link href="/servicos/fotografia">
-                  <a className="font-bitter text-base-200">Fotografia</a>
+                  <a className="font-bahianita text-xl text-base-200">Fotografia</a>
                 </Link>
               </li>
               <li>
                 <Link href="/servicos/imagens">
-                  <a className="font-bitter text-base-200">Edição de Imagem</a>
+                  <a className="font-bahianita text-xl text-base-200">Edição de Imagem</a>
                 </Link>
               </li>
               <li>
                 <Link href="/servicos/ambiente">
-                  <a className="font-bitter text-base-200">Ambientação</a>
+                  <a className="font-bahianita text-xl text-base-200">Ambientação</a>
                 </Link>
               </li>
             </ul>
@@ -43,7 +44,7 @@ function upBarElements() {
       </div>
       <button className="mt-4 active:bg-primary hover:bg-neutral-focus active:rounded-md transition-all active:text-neutral-content border-b-2 p-2 text-secondary-focus  flex items-left text-md btn-ghost text-md rounded-md">
       <Link href="/#portfolio">
-        <a className='font-bitter text-neutral-content border-b-2 border-base-content'>
+        <a className='font-bahianita text-xl text-neutral-content border-b-2 border-base-content'>
           Portfolio
         </a>
       </Link>
@@ -58,38 +59,38 @@ function sideBarElements() {
     <Link href="/comissao">
       <li className="m-4 mb-0 text-neutral-focus bg-base-300 text-xl">
         <div>
-          <span className='border-b-2 border-primary'> Orçamento </span>
+          <span className='font-bahianita text-2xl border-b-2 border-primary'> Orçamento </span>
         </div>
       </li>
     </Link>
     <Link href="/#portfolio">
       <li className="m-4 mb-0 text-neutral-focus bg-base-300 text-xl">
         <div>
-            <span className='border-b-2 border-primary'> Portfolio </span>
+            <span className='font-bahianita text-2xl border-b-2 border-primary'> Portfolio </span>
         </div>
       </li>
     </Link>
     <Link href="/#services">
       <li className="text-neutral-focus bg-base-300 m-4 mb-0 text-xl">
         <div>
-          <span className='border-b-2 border-primary'> Serviços </span>
+          <span className='font-bahianita text-2xl border-b-2 border-primary'> Serviços </span>
         </div>
       </li>
     </Link>
     <ul className="menu pl-6 menu-compact bg-base-300 p-2 rounded-box">
       <li>
         <Link href="/servicos/fotografia">
-          <a>Fotografia</a>
+          <a className="font-bahianita text-xl text-neutral-focus">Fotografia</a>
         </Link>
       </li>
       <li>
         <Link href="/servicos/imagens">
-          <a>Edição de Imagem</a>
+          <a className="text-xl font-bahianita text-neutral-focus">Edição de Imagem</a>
         </Link>
       </li>
       <li>
         <Link href="/servicos/ambiente">
-          <a>Ambientação</a>
+          <a className="text-xl font-bahianita text-neutral-focus">Ambientação</a>
         </Link>
       </li>
     </ul>
@@ -123,6 +124,16 @@ function MyApp({ Component, pageProps }) {
               </ul>
             </div>
           </div>
+            <NextNProgress
+              color="#8c8d8f"
+              startPosition={0.2}
+              stopDelayMs={20}
+              height={4}
+              showOnShallow={true}
+              options={{
+                showSpinner: false,
+              }}
+            />
             <Component {...pageProps} />
 
             <footer className="footer p-10 bg-neutral text-neutral-content">
