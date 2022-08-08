@@ -7,7 +7,7 @@ function upBarElements() {
     <>
       <Link href="/comissao">
         <button className="mt-4 active:bg-primary hover:bg-neutral-focus active:rounded-md transition-all active:text-neutral-content border-b-2 p-2 text-secondary-focus  flex items-left text-md btn-ghost text-md rounded-md">
-            <span className='font-bebas border-b-2 border-base-content text-base-200'>
+            <span className='font-bitter border-b-2 border-base-content text-neutral-content'>
               Orçamento
             </span>
         </button>
@@ -17,24 +17,24 @@ function upBarElements() {
         <div className="flex">
           <div className="dropdown dropdown-end">
             <button className="mt-4 active:bg-primary hover:bg-neutral-focus active:rounded-md transition-all active:text-neutral-content border-b-2 p-2 text-secondary-focus  flex items-left text-md btn-ghost text-md rounded-md">
-              <span className='font-bebas border-b-2 text-neutral-content border-base-content'>
+              <span className='font-bitter border-b-2 text-neutral-content border-base-content'>
                 Serviços
               </span>
             </button>
             <ul tabIndex="0" className="flex flex-col items-center menu dropdown-content text-secondary-focus w-max shadow bg-base-300/[0.1] rounded-box w-52 mt-4">
               <li>
                 <Link href="/servicos/fotografia">
-                  <a className="font-bebas text-base-200">Fotografia</a>
+                  <a className="font-bitter text-base-200">Fotografia</a>
                 </Link>
               </li>
               <li>
                 <Link href="/servicos/imagens">
-                  <a className="font-bebas text-base-200">Edição de Imagem</a>
+                  <a className="font-bitter text-base-200">Edição de Imagem</a>
                 </Link>
               </li>
               <li>
                 <Link href="/servicos/ambiente">
-                  <a className="font-bebas text-base-200">Ambientação</a>
+                  <a className="font-bitter text-base-200">Ambientação</a>
                 </Link>
               </li>
             </ul>
@@ -42,7 +42,7 @@ function upBarElements() {
         </div>
       </div>
       <button className="mt-4 active:bg-primary hover:bg-neutral-focus active:rounded-md transition-all active:text-neutral-content border-b-2 p-2 text-secondary-focus  flex items-left text-md btn-ghost text-md rounded-md">
-        <a href="/#portfolio" className='font-bebas text-base-200 border-b-2 border-base-content'>
+        <a href="/#portfolio" className='font-bitter text-neutral-content border-b-2 border-base-content'>
           Portfolio
         </a>
       </button>
