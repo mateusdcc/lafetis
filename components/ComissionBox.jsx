@@ -24,7 +24,7 @@ function ComissionBox() {
         </div>
         <div className="form-control mt-6">
         <Link href="/servicos/feito">
-          <button className="btn btn-primary">Comissione</button>
+          <button className="btn">Comissione</button>
         </Link>
         </div>
       </div>

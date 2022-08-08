@@ -7,34 +7,34 @@ function upBarElements() {
     <>
       <Link href="/comissao">
         <button className="mt-4 active:bg-primary hover:bg-neutral-focus active:rounded-md transition-all active:text-neutral-content border-b-2 p-2 text-secondary-focus  flex items-left text-md btn-ghost text-md rounded-md">
-            <span className='border-b-2 border-primary'>
+            <span className='font-bebas border-b-2 border-base-content text-base-200'>
               Orçamento
             </span>
         </button>
       </Link>
 
-      <div className="flex justify-end ">
+      <div className="flex justify-end">
         <div className="flex">
           <div className="dropdown dropdown-end">
             <button className="mt-4 active:bg-primary hover:bg-neutral-focus active:rounded-md transition-all active:text-neutral-content border-b-2 p-2 text-secondary-focus  flex items-left text-md btn-ghost text-md rounded-md">
-              <span className='border-b-2 border-primary'>
+              <span className='font-bebas border-b-2 text-neutral-content border-base-content'>
                 Serviços
               </span>
             </button>
             <ul tabIndex="0" className="flex flex-col items-center menu dropdown-content text-secondary-focus w-max shadow bg-base-300/[0.1] rounded-box w-52 mt-4">
               <li>
                 <Link href="/servicos/fotografia">
-                  <a>Fotografia</a>
+                  <a className="font-bebas text-base-200">Fotografia</a>
                 </Link>
               </li>
               <li>
                 <Link href="/servicos/imagens">
-                  <a>Edição de Imagem</a>
+                  <a className="font-bebas text-base-200">Edição de Imagem</a>
                 </Link>
               </li>
               <li>
                 <Link href="/servicos/ambiente">
-                  <a>Ambientação</a>
+                  <a className="font-bebas text-base-200">Ambientação</a>
                 </Link>
               </li>
             </ul>
@@ -42,11 +42,9 @@ function upBarElements() {
         </div>
       </div>
       <button className="mt-4 active:bg-primary hover:bg-neutral-focus active:rounded-md transition-all active:text-neutral-content border-b-2 p-2 text-secondary-focus  flex items-left text-md btn-ghost text-md rounded-md">
-        <Link href="/#portfolio">
-          <a className='border-b-2 border-primary'>
-            Portfolio
-          </a>
-        </Link>
+        <a href="/#portfolio" className='font-bebas text-base-200 border-b-2 border-base-content'>
+          Portfolio
+        </a>
       </button>
     </>
   )
@@ -64,9 +62,7 @@ function sideBarElements() {
     </Link>
     <li className="m-4 mb-0 text-neutral-focus bg-base-300 text-xl">
       <div>
-        <Link href="/#portfolio">
-            <a className='border-b-2 border-primary'> Portfolio </a>
-        </Link>
+          <a href="/#portfolio" className='border-b-2 border-primary'> Portfolio </a>
       </div>
     </li>
     <li className="text-neutral-focus bg-base-300 m-4 mb-0 text-xl">
@@ -113,7 +109,7 @@ function MyApp({ Component, pageProps }) {
               </label>
             </div>
             <Link href="/">
-              <button className="flex-1 px-2 mx-2 text-secondary-focus">Lafetis</button>
+              <button className="flex-1 px-2 mx-2 text-2xl text-neutral-content font-oleo">Lafetis</button>
             </Link>
             <div className="flex-none hidden lg:block">
               <ul className="menu menu-horizontal">

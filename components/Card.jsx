@@ -11,7 +11,7 @@ function Card({ imgSrc, imageAlt, Title, Description, buttonTitle, buttonLink })
         <p>{Description}</p>
         <div className="card-actions">
           <Link href={buttonLink}>
-            <button className="btn btn-primary">{buttonTitle}</button>
+            <button className="btn">{buttonTitle}</button>
           </Link>
         </div>
       </div>

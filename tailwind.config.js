@@ -9,6 +9,11 @@ module.exports = {
       animation: {
         'bounce-slow': 'bounce 2s ease-in-out infinite',
       },
+      fontFamily: {
+        'alumni': ['Alumni Sans Inline One', 'cursive'],
+        'bebas': ['Bebas Neue', 'cursive'],
+        'oleo': ['Oleo Script Swash Caps', 'sans-serif'],
+      },
     },
   },
   plugins: [require("@tailwindcss/typography"), require("daisyui")],
@@ -21,6 +26,5 @@ module.exports = {
     logs: true,
     rtl: false,
     prefix: "",
-    darkTheme: "garden",
   },
 }
