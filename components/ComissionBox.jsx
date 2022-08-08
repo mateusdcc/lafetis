@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 function ComissionBox() {
   return (
-    <div className="card mr-5 backdrop-blur flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100/[0.3]">
+    <div className="card mr-5 ml-5 backdrop-blur flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100/[0.3]">
       <div className="card-body">
         <div className="form-control">
           <label className="label">
